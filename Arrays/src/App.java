@@ -1,6 +1,6 @@
 /**
  * 
- * @author Youri Tjang
+ *  Youri Tjang
  *
  */
 public class App {
