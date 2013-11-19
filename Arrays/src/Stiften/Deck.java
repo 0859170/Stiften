@@ -1,3 +1,4 @@
+package Stiften;
 import java.util.Arrays;
 
 /**
@@ -13,7 +14,7 @@ public class Deck {
 	 * Constructor
 	 */
 	Deck(){
-		cardArray = new Card[0];
+		cardArray = new Card[52];
 	}
 
 	/**
@@ -21,6 +22,14 @@ public class Deck {
 	 * harten en ruiten.
 	 */
 	public void fillDeck() {
+		int index = 0;
+		for (Card.suitList s : Card.suitList.values()) {
+			for (Card.numberList n : Card.numberList.values()) {
+				Card newCard = new Card(s,n);
+				cardArray[index] = newCard;
+				index++;
+			}
+		}
 	}
 
 	/**

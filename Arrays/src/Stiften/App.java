@@ -1,6 +1,7 @@
+package Stiften;
 /**
  * 
- *  Youri Tjang
+ * @author Youri Tjang
  *
  */
 public class App {
@@ -13,7 +14,7 @@ public class App {
 		deck.fillDeck();
 		deck.shuffle();
 		
-		Card card = new Card(/*Bijvoorbeeld. Harten Aas */);
+		Card card = new Card(Card.suitList.clubs,Card.numberList.two);
 		int testIndex = 30;
 		deck.insertAt(card, testIndex);
 		System.out.print("Sequential search ...");
