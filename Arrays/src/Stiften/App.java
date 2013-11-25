@@ -15,7 +15,7 @@ public class App {
 		deck.shuffle();
 		
 		Card card = new Card(Card.suitList.clubs,Card.numberList.two);
-		int testIndex = 30;
+		int testIndex = 5;
 		deck.insertAt(card, testIndex);
 		System.out.print("Sequential search ...");
 		int foundIndex = deck.sequentialSearch(card);

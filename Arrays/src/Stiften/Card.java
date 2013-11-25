@@ -45,6 +45,22 @@ public class Card {
 		this.number = number;
 	}
 	
+	public suitList getSuit() {
+		return suit;
+	}
+
+	public void setSuit(suitList suit) {
+		this.suit = suit;
+	}
+
+	public numberList getNumber() {
+		return number;
+	}
+
+	public void setNumber(numberList number) {
+		this.number = number;
+	}
+
 	/**
 	 * Pretty-print deze Card als string
 	 */
