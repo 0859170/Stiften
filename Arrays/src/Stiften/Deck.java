@@ -1,5 +1,4 @@
 package Stiften;
-import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -114,6 +113,9 @@ public class Deck {
 	 * Legt de kaarten op volgorde. We nemen aan dat een deck op volgorde ligt,
 	 * als de volgorde hetzelfde is als na {@link #fillDeck()}
 	 */
+    // DOCENT: Goed dat je zelf hebt geprobeerd dit te implementeren i.p.v. de bestaande Java API te gebruiken!
+    // Het werkt ook prima, maar het is nog niet heel vlot. Probeer eens na te gaan wat de complexiteit is. Hoevaak
+    // lopen we over het deck heen? Hoe kunnen we dat verbeteren? Denk aan rekenen met Enums, dat kan!
 	public void sort() {
 		Card[] newArray = new Card[cardArray.length];
 		int index = 0;
@@ -150,7 +152,11 @@ public class Deck {
 			if (index == previndex) {
 				index = index + 1;
 			}
-			
+
+            // DOCENT: Hoe had je dit eleganter kunnen oplossen? Het vergelijken van kaarten hoort eigenlijk niet
+            // hier thuis, zeker als je het wilt hergebruiken voor sort. Zoek naar compareTo. En gebruik de int waarde
+            // van enums
+
 			//first compare suits
 			if (card.getSuit().ordinal() > cardArray[index].getSuit().ordinal()) {
 				start = index;

@@ -4,6 +4,8 @@ package Stiften;
  * @author Youri Tjang
  *
  */
+// Goede uitwerking! Er zijn nog wel wat verbeteringen mogelijk, maar de stof is je denk ik duidelijk. Zie verder mijn
+// comments
 public class App {
 
 	/**
@@ -14,7 +16,7 @@ public class App {
 		deck.fillDeck();
 		deck.shuffle();
 		
-		Card card = new Card(Card.suitList.clubs,Card.numberList.two);
+		Card card = new Card(Card.suitList.hearts,Card.numberList.two);
 		int testIndex = 5;
 		deck.insertAt(card, testIndex);
 		System.out.print("Sequential search ...");
